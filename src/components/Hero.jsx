@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Mail, ExternalLink } from 'lucide-react';
 import { personalInfo } from '../data/mock';
 import { Button } from './ui/button';
-
+import profile from '../assets/profile.JPG';
 const Hero = () => {
     const [visible, setVisible] = useState(false);
     useEffect(() => { const t = setTimeout(() => setVisible(true), 80); return () => clearTimeout(t); }, []);
@@ -91,9 +91,10 @@ const Hero = () => {
                             <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full blur-3xl opacity-30 scale-125"></div>
 
                             {/* Image */}
+
                             <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px] rounded-full overflow-hidden border-4 border-teal-500 shadow-2xl relative transition-all duration-500 hover:scale-105">
                                 <img
-                                    src="/profile.jpg"
+                                    src={profile}
                                     alt="Profile"
                                     className="w-full h-full object-cover"
                                 />
