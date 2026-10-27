@@ -63,7 +63,7 @@ export const experience = [
         period: "1 year +",
         responsibilities: [
             "Worked on various GAIL projects where I designed and developed mobile applications, optimizing app performance.",
-            "Worked on a chat app like WhatsApp, where I designed and developed the mobile app frontend with Expo, featuring major functionalities of a chat app, implementing WebSockets, and optimizing the app for better performance.",
+            "Created MyneChat, a real-time messaging mobile app like WhatsApp. Designed and developed the mobile app frontend with Expo, integrating WebSockets for instant chat, WebRTC for audio/video calling, and optimizing app performance.",
         ]
     },
     {
@@ -112,6 +112,28 @@ export const experience = [
 export const featuredProjects = [
     {
         id: 1,
+        name: "MyneChat",
+        description: "A real-time communication mobile application designed for instant one-to-one and group messaging. Features WebSocket-powered live chat, high-definition audio & video calling via WebRTC, media sharing, and push notifications.",
+        features: [
+            "Real-time one-to-one and group messaging",
+            "HD audio & video calling via WebRTC",
+            "WebSocket integration for live message delivery",
+            "Media and document sharing",
+            "Push notifications for instant message & call alerts",
+            "User profile and status management"
+        ],
+        technologies: ["React Native", "Expo", "WebSocket", "WebRTC", "Push Notifications"],
+        playStoreLink: "https://play.google.com/store/apps/details?id=com.webmyne.chatapp",
+        downloads: "10+",
+        screenshots: [
+            "https://play-lh.googleusercontent.com/t0BDjMiQazOknDyatoA5MivBpcUoSv5XlnfyRjgxRGngmGyFG5fZIKjn6AoAYDVx7nXoD8bs-OdzotXftkmmuw=w526-h296-rw",
+            "https://play-lh.googleusercontent.com/QstJwSLLT6rRticMuHo6WLRMA4xNm1sew6oek4BpEVY-U9VHhBwtaciT-jKpR_XgB3OWrf08tLdHhlXEUt_pBQ=w526-h296-rw",
+            "https://play-lh.googleusercontent.com/QQUleDZMf-2NanBanGLxvp8mKEakBsUZeWbOYhD7ewpH6ja6AbPsjzGGHNP5eKAZ_7ri2c_g2DOl4MODmdNz=w526-h296-rw",
+            "https://play-lh.googleusercontent.com/1VeKx3hlRBJpuWwzQO7dRrCnXEU7GbprfbtJdkQeRV8vOMVLIMk2SEFCcrlulLlbL3BBSY4PaZ1ohnzMq3oA=w526-h296-rw"
+        ]
+    },
+    {
+        id: 2,
         name: "Payroll Tech",
         description: "A modern payroll management system designed to streamline and automate the entire payroll process. Simplifies tasks such as calculating employee salaries, withholding taxes, managing benefits, and ensuring compliance with labor laws.",
         features: [
@@ -131,7 +153,7 @@ export const featuredProjects = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         name: "Book My Slot",
         description: "An advanced scheduling platform designed to streamline appointment management for businesses and individuals. Enables seamless booking experiences for healthcare providers, salons, fitness trainers, and consultants.",
         features: [
@@ -151,7 +173,7 @@ export const featuredProjects = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         name: "Frame IT",
         description: "A creative app for designing & customizing images for festivals, business promotions, & political campaigns. Users can easily add their brand name, business name, & logo to create unique, eye-catching visuals for social media.",
         features: [
@@ -171,7 +193,7 @@ export const featuredProjects = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         name: "Blink Basket",
         description: "A next-generation eCommerce platform designed to provide a fast, secure, and user-friendly shopping experience. Features an extensive product catalog, secure payments, and swift delivery services.",
         features: [
@@ -183,7 +205,7 @@ export const featuredProjects = [
         ],
         technologies: ["React Native", "Razorpay", "REST API", "Redux"],
         playStoreLink: "https://play.google.com/store/apps/details?id=com.qocept.blinkbasket",
-        downloads: "50+",
+        downloads: "500+",
         screenshots: [
             "https://play-lh.googleusercontent.com/gCHQMGetppsTyE_sJAFkuA6Mk4yOnUuzXHO-HOV3c0IxUqGWSIlBYFu79dZCARbnyGwK=w526-h296-rw",
             "https://play-lh.googleusercontent.com/8SinmWakjQsdhIZzf-blNkqne7NcOkp4VOFQSE7eeh0NaFHNtKw8CwQHqj_KzAe7qQ=w526-h296-rw",
@@ -194,42 +216,42 @@ export const featuredProjects = [
 
 export const otherProjects = [
     {
-        id: 5,
+        id: 6,
         name: "Society Management System",
         description: "A comprehensive society management application with role-based dynamic access control for residents and administrators.",
         technologies: ["React Native", "Redux", "REST API"],
         category: "Management"
     },
     {
-        id: 6,
+        id: 7,
         name: "Trucking Management Solution",
         description: "Driver's mobile application for trip activities and service hours tracking. Helps drivers manage their routes and working hours efficiently.",
         technologies: ["React Native", "GPS", "Real-time Tracking"],
         category: "Logistics"
     },
     {
-        id: 7,
+        id: 8,
         name: "Asset Tracking Solution",
         description: "Mobile application for live tracking assets via GPS tracker. Integrated socket connection and layered OpenStreetMap with Leaflet and Google Maps.",
         technologies: ["React Native", "Socket.io", "Google Maps", "Leaflet"],
         category: "Tracking"
     },
     {
-        id: 8,
+        id: 9,
         name: "Mobile Device Tracking",
         description: "Tracking app for companies to access device location after activation. Sends location to server at specific intervals, even when the app is in the background.",
         technologies: ["React Native", "Background Services", "Geolocation"],
         category: "Tracking"
     },
     {
-        id: 9,
+        id: 10,
         name: "IamComfi - Exercise App",
         description: "Exercise app where users can set timers for exercises and view analysis data in chart view. Helps users track their fitness progress.",
         technologies: ["React Native", "Charts", "Timer"],
         category: "Health & Fitness"
     },
     {
-        id: 10,
+        id: 11,
         name: "E-Commerce Mobile App",
         description: "Full-featured e-commerce application with Cart, Product catalog, and Order scheduling modules.",
         technologies: ["React Native", "Redux", "Payment Gateway"],
