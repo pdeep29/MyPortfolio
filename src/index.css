@@ -21,10 +21,10 @@ code {
     :root {
         --background: 0 0% 100%;
         --foreground: 222 47% 11%;
-        ---card: 0 0% 100%;
-       --card-foreground: 222 47% 11%;
+        --card: 0 0% 100%;
+        --card-foreground: 222 47% 11%;
         --popover: 0 0% 100%;
-      --popover-foreground: 222 47% 11%;
+        --popover-foreground: 222 47% 11%;
         --primary: 174 72% 56%;
         --primary-foreground: 0 0% 100%;
         --secondary: 210 40% 96%;
@@ -42,7 +42,7 @@ code {
         --radius: 0.5rem;
     }
     .dark {
-        -background: 222 47% 4%;
+        --background: 222 47% 4%;
         --foreground: 210 40% 98%;
         --card: 222 47% 7%;
         --card-foreground: 210 40% 98%;

@@ -8,12 +8,13 @@ export const personalInfo = {
     phone: "+91 7984039398",
     linkedin: "https://www.linkedin.com/in/deep-patel-426349194/",
     experience: "4.5+ Years",
-    summary: "Results-driven React Native Developer with 4.5 years of experience in designing and delivering high performance, cross-platform mobile applications for iOS and Android. Proficient in creating intuitive user interfaces and optimizing app performance to align with business objectives. Adept at collaborating with cross-functional teams to deliver scalable, user-focused solutions. Dedicated to continuous learning and leveraging the latest industry advancements to drive innovation."
+    summary: "Results-driven React Native Developer with 4.5 years of experience in designing and delivering high-performance, cross-platform mobile applications for iOS and Android. Proficient in creating intuitive user interfaces and optimizing app performance to align with business objectives. Adept at collaborating with cross-functional teams to deliver scalable, user-focused solutions. Dedicated to continuous learning and leveraging the latest industry advancements to drive innovation."
 };
 
 export const skills = {
     technical: [
         { name: "React Native", category: "Framework" },
+        { name: "Expo", category: "Framework" },
         { name: "JavaScript", category: "Language" },
         { name: "TypeScript", category: "Language" },
         { name: "ECMAScript", category: "Language" },
@@ -21,19 +22,34 @@ export const skills = {
         { name: "Redux Saga", category: "State Management" },
         { name: "Redux Thunk", category: "State Management" },
         { name: "REST API", category: "Integration" },
-        { name: "Web socket", category: "Integration" },
+        { name: "WebSocket", category: "Integration" },
+        { name: "WebRTC", category: "Integration" },
+        { name: "OpenStreetMap", category: "Integration" },
+        { name: "Google Maps", category: "Integration" },
         { name: "Axios", category: "Library" },
-        { name: "Graph QL", category: "Library" },
+        { name: "GraphQL", category: "Library" },
         { name: "Xcode", category: "Tools" },
         { name: "Android Studio", category: "Tools" },
         { name: "Jira", category: "Project Management" },
+        { name: "Zoho Sprints", category: "Project Management" },
         { name: "Bitbucket", category: "Version Control" },
         { name: "GitLab", category: "Version Control" },
         { name: "GitHub", category: "Version Control" },
         { name: "Razorpay", category: "Payment" },
         { name: "Firebase", category: "Backend" },
+        { name: "Real-Time Chat & Messaging", category: "Features" },
+        { name: "Video & Audio Calling", category: "Features" },
         { name: "Push Notifications", category: "Features" },
-        { name: "Expo", category: "Framework" }
+        { name: "Live GPS & Asset Tracking", category: "Features" },
+        { name: "Background Location Tracking", category: "Features" },
+        { name: "Role-Based Access Control (RBAC)", category: "Features" },
+        { name: "Payment Gateway Integration", category: "Features" },
+        { name: "Appointment Booking & Scheduling", category: "Features" },
+        { name: "Multi-Language Support (i18n)", category: "Features" },
+        { name: "Cart & Wishlist Management", category: "Features" },
+        { name: "Real-Time Order Tracking", category: "Features" },
+        { name: "Image Processing & Customization", category: "Features" },
+        { name: "Charts & Analytics Visualization", category: "Features" }
     ]
 };
 
@@ -42,12 +58,12 @@ export const experience = [
         id: 1,
         company: "Webmyne Systems Pvt. Ltd.",
         location: "Vadodara, India",
-        role: "Software Developer - React Namtive",
+        role: "Software Developer - React Native",
         duration: "Apr 2025 - Till Now",
         period: "1 year +",
         responsibilities: [
-            "Worked on various Gail Projects where i design and develop mobile app, with optimizing apps.",
-            "Worked on chat app like whatsapp, where i design and develop mobile app frontend with expo havign majour functionalities of chating app with implementing websockets and optimizing app for better performance.",
+            "Worked on various GAIL projects where I designed and developed mobile applications, optimizing app performance.",
+            "Worked on a chat app like WhatsApp, where I designed and developed the mobile app frontend with Expo, featuring major functionalities of a chat app, implementing WebSockets, and optimizing the app for better performance.",
         ]
     },
     {
@@ -60,7 +76,7 @@ export const experience = [
         responsibilities: [
             "Created Payroll Management System (Payroll Tech), implemented role-based dynamic access to the modules in the application.",
             "Created Appointment booking application (Book My Slot) for salons where users can view services and book appointments with multi-language support.",
-            "Created Frame It Mobile application for users to create and download posters for Facebook, Instagram, LinkedIn, etc., and share them.",
+            "Created Frame IT mobile application for users to create and download posters for Facebook, Instagram, LinkedIn, etc., and share them.",
             "Created E-Commerce mobile app (Blink Basket) where users can view products, add to Wishlist, buy products, make payments, and track delivery status."
         ]
     },
@@ -73,10 +89,10 @@ export const experience = [
         period: "1 year 11 months",
         responsibilities: [
             "Participated in initial concept, design, and release to fulfill the complete lifecycle of the application.",
-            "Worked on Society Management System, implemented role-based dynamic Access Control.",
+            "Worked on Society Management System, implemented role-based dynamic access control.",
             "Developed a Driver's mobile application for trip activities and service hours for Trucking Management Solution.",
-            "Developed a mobile application for users to live track assets via GPS tracker. Integrated socket connection, layered open street map with Google Maps' leaflet.",
-            "Worked on a Mobile tracking app for companies to access device location after activation and send location to the server at specific intervals, even when the app is in the background."
+            "Developed a mobile application for users to live track assets via GPS tracker. Integrated socket connections, layered OpenStreetMap with Leaflet and Google Maps.",
+            "Worked on a mobile tracking app for companies to access device location after activation and send location to the server at specific intervals, even when the app is in the background."
         ]
     },
     {
@@ -87,8 +103,8 @@ export const experience = [
         duration: "May 2021 - Oct 2021",
         period: "6 months",
         responsibilities: [
-            "Worked on an exercise app named lamComfi where users can set timers for exercises and view analysis data in chart view.",
-            "Understood requirements and designed an e-commerce mobile application using React-Native. Implemented Cart, Product, and Scheduling of Orders modules."
+            "Worked on an exercise app named IamComfi where users can set timers for exercises and view analysis data in chart view.",
+            "Understood requirements and designed an e-commerce mobile application using React Native. Implemented Cart, Product, and Scheduling of Orders modules."
         ]
     }
 ];
@@ -137,7 +153,7 @@ export const featuredProjects = [
     {
         id: 3,
         name: "Frame IT",
-        description: "A creative app for designing & customizing images for festivals, business promotions, & political campaigns. Users can easily add brand name, business name, & logo to create unique, eye-catching visuals for social media.",
+        description: "A creative app for designing & customizing images for festivals, business promotions, & political campaigns. Users can easily add their brand name, business name, & logo to create unique, eye-catching visuals for social media.",
         features: [
             "Template-based design system",
             "Custom brand logo integration",
@@ -157,7 +173,7 @@ export const featuredProjects = [
     {
         id: 4,
         name: "Blink Basket",
-        description: "A next-generation eCommerce platform designed to provide a fast, secure, and user-friendly shopping experience. Features extensive product catalog, secure payments, and swift delivery services.",
+        description: "A next-generation eCommerce platform designed to provide a fast, secure, and user-friendly shopping experience. Features an extensive product catalog, secure payments, and swift delivery services.",
         features: [
             "Multi-category product catalog",
             "Wishlist & cart management",
@@ -194,20 +210,20 @@ export const otherProjects = [
     {
         id: 7,
         name: "Asset Tracking Solution",
-        description: "Mobile application for live tracking assets via GPS tracker. Integrated socket connection and layered open street map with Google Maps' leaflet.",
+        description: "Mobile application for live tracking assets via GPS tracker. Integrated socket connection and layered OpenStreetMap with Leaflet and Google Maps.",
         technologies: ["React Native", "Socket.io", "Google Maps", "Leaflet"],
         category: "Tracking"
     },
     {
         id: 8,
         name: "Mobile Device Tracking",
-        description: "Tracking app for companies to access device location after activation. Sends location to server at specific intervals, even when app is in background.",
+        description: "Tracking app for companies to access device location after activation. Sends location to server at specific intervals, even when the app is in the background.",
         technologies: ["React Native", "Background Services", "Geolocation"],
         category: "Tracking"
     },
     {
         id: 9,
-        name: "lamComfi - Exercise App",
+        name: "IamComfi - Exercise App",
         description: "Exercise app where users can set timers for exercises and view analysis data in chart view. Helps users track their fitness progress.",
         technologies: ["React Native", "Charts", "Timer"],
         category: "Health & Fitness"
@@ -224,14 +240,14 @@ export const otherProjects = [
 export const education = [
     {
         id: 1,
-        degree: "Master in Computer Application",
+        degree: "Master of Computer Applications",
         institution: "CHARUSAT University",
         duration: "2019 - 2021",
         cgpa: "6.53/10"
     },
     {
         id: 2,
-        degree: "Bachelor of Computer Application",
+        degree: "Bachelor of Computer Applications",
         institution: "Shri Govind Guru University",
         duration: "2016 - 2019",
         cgpa: "6.1/10"

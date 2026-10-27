@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext({
-    theme: 'light',
+    theme: 'dark',
     toggleTheme: () => { }
 });
 
@@ -15,8 +15,14 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState(() => {
-        const savedTheme = localStorage.getItem('theme');
-        return savedTheme || 'light';
+        const initialized = localStorage.getItem('theme_initialized');
+        if (!initialized) {
+            // First time initialization: set dark mode as default
+            localStorage.setItem('theme_initialized', 'true');
+            localStorage.setItem('theme', 'dark');
+            return 'dark';
+        }
+        return localStorage.getItem('theme') || 'dark';
     });
 
     useEffect(() => {
@@ -24,10 +30,16 @@ export const ThemeProvider = ({ children }) => {
         root.classList.remove('light', 'dark');
         root.classList.add(theme);
         localStorage.setItem('theme', theme);
+        localStorage.setItem('theme_initialized', 'true');
     }, [theme]);
 
     const toggleTheme = () => {
-        setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+        setTheme(prevTheme => {
+            const nextTheme = prevTheme === 'light' ? 'dark' : 'light';
+            localStorage.setItem('theme_initialized', 'true');
+            localStorage.setItem('theme', nextTheme);
+            return nextTheme;
+        });
     };
 
     return (

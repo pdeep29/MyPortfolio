@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="theme-color" content="#14b8a6" />
+    <meta name="theme-color" content="#030712" />
     <meta name="description" content="Deep Patel - React Native Mobile App Developer Portfolio" />
     <title>Deep Patel | React Native Developer</title>
+    <script>
+      (function () {
+        try {
+          var initialized = localStorage.getItem('theme_initialized');
+          var theme = initialized ? (localStorage.getItem('theme') || 'dark') : 'dark';
+          document.documentElement.classList.remove('light', 'dark');
+          document.documentElement.classList.add(theme);
+          if (!initialized) {
+            localStorage.setItem('theme_initialized', 'true');
+            localStorage.setItem('theme', 'dark');
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
